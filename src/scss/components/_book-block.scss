@@ -1,0 +1,48 @@
+@import "../variables";
+
+.book-block {
+	flex: 1 1 25%;
+	padding: 0 15px;
+	@media (max-width: 1300px) {
+		flex: 1 1 33.3333%;
+	}
+	@media (max-width: 969px) {
+		flex: 1 1 50%;
+	}
+	@media (max-width: 500px) {
+		flex: 1 1 100%;
+	}
+	&__column {
+		background: #f3f2f1;
+		padding: 10px;
+		border-radius: 5px;
+		height: 100%;
+	}
+	&__img {
+		img {
+			width: 128px;
+			height: 184px;
+			object-fit: cover;
+		}
+		text-align: center;
+		&:not(:last-child) {
+			margin-bottom: 5px;
+		}
+	}
+	&__categories {
+		text-decoration: underline;
+
+		&:not(:last-child) {
+			margin-bottom: 5px;
+		}
+	}
+	&__title {
+		font-size: 16px;
+		&:not(:last-child) {
+			margin-bottom: 5px;
+		}
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
