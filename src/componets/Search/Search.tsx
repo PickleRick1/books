@@ -1,10 +1,10 @@
 import React from "react";
-import { useDispatch } from "react-redux";
 import { setSearchValue } from "../../redux/slices/filter/filterSlice";
+import { useAppDispatch } from "../../redux/store";
 
 export const Search: React.FC = () => {
   const [value, setValue] = React.useState("");
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
   const onKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
       dispatch(setSearchValue(value));

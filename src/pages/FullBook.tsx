@@ -8,7 +8,7 @@ export const FullBook: React.FC = () => {
   const navigate = useNavigate();
   let { id } = useParams();
   const onClickBack = () => {
-    navigate("/");
+    navigate("/books");
   };
   React.useEffect(() => {
     window.scrollTo(0, 0);

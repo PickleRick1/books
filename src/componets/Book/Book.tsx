@@ -12,13 +12,13 @@ export const Book: React.FC<BookType> = ({ volumeInfo, id }) => {
     <div className="book-block">
       <div className="book-block__column">
         <div className="book-block__img">
-          <Link to={`/book/${id}`}>
+          <Link to={`/books/${id}`}>
             <img src={img} alt="img-book" />
           </Link>
         </div>
 
         <div className="book-block__categories">{category}</div>
-        <Link to={`/book/${id}`}>
+        <Link to={`/books/${id}`}>
           <h3 className="book-block__title">{title}</h3>
         </Link>
         <div className="book-block__authors">{authors}</div>
